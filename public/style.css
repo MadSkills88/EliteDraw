@@ -1,0 +1,137 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+body, html{
+   width: 100%;
+   height: 100%;
+}
+
+#loadingscreen   {
+   position:absolute;
+   height:100vh;
+   width:100%;
+   background-color:black;
+   z-index:1000;
+   opacity:0.6;
+}
+
+.hidden   {
+   display:none;
+   visibility:hidden;
+   opacity:1;
+}
+
+#nav  {
+   position:absolute;
+   height:50px;
+   width:100%;
+   background:lightblue;
+   color:midnightblue;
+}
+
+#counter   {
+   background-color: #009ACD; 
+   width: 100%; 
+   text-align: center;
+   color:white;
+   padding-top:4px;
+   padding-bottom:4px;
+   opacity:1;
+}
+
+#color_icon, #width_icon {
+   margin-left:40px;
+}
+
+#line_color, #line_width {
+   padding:4px;
+   font-size:16px;
+   opacity:0.8;
+   border-radius:4px;
+   border:1px solid white;
+}
+#line_width {
+   width:130px;
+}
+
+#line_color:focus, #line_width:focus {
+   opacity:1;
+}
+
+#clearbutton  {
+   color:darkgreen;
+   background-color:lightgreen;
+   height:100%;
+   width:100px;
+   font-size:20px;
+   border:none;
+   outline:none;
+}
+
+#clearbutton:hover  {
+   background-color: #B6FCB6;
+   border:2px solid green;
+   color:green;
+   -webkit-transition: background-color 0.4s linear;
+    -moz-transition:  background-color 0.4s linear;
+    -o-transition:  background-color 0.4s linear;
+    transition:  background-color 0.4s linear;
+}
+
+#clearbutton:active  {
+   background:green;
+   color:yellow;
+}
+
+.option   {
+   float:right;
+   height:100%;
+   width:50px;
+   font-size:20px;
+   box-sizing: border-box;
+   background-color: lightgreen;
+   color:darkgreen;
+   border:5px solid green;
+   border-radius:100%;
+   outline:none;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+}
+
+.option:hover   {
+   background-color: #B6FCB6;
+   border-color: darkgreen;
+   color:green;
+}
+
+.option:active   {
+   background:green;
+   color:yellow;
+}
+
+.activeoption   {
+   border-color:darkgreen !important; 
+   background-color: darkgreen !important;
+   color:lightgreen !important;
+}
+
+.activeoption:hover   {
+   border-color:green !important;
+}
+
+#canvas {
+   display: block;
+}
+
+
+#savingscreen   {
+   position:absolute;
+   height:100vh;
+   width:100%;
+   background-color:black;
+   z-index:1000;
+   opacity:0.6;
+}

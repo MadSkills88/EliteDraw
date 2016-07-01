@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>AwesomeToad Elite Drawer</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css" type="text/css" />
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+      <script src="socket.io/socket.io.js"></script>
+      <script src="client.js"></script>
+   </head>
+   <body>
+      <div id = "loadingscreen"></div> <!--Put a cool gif-->
+      <div id = "nav">
+         <button id = "clearbutton">CLEAR</button>
+         <button id = "drawbutton" class = "option">&#8472;</button>
+         <i id="color_icon" class="fa fa-paint-brush fa-2x"></i>
+         <input id="line_color" type="text" placeholder="Enter hex code" onchange="changeColor();">
+         <i id="width_icon" class="fa fa-pencil fa-2x"></i>
+         <input id="line_width" type="number" placeholder="Enter line width" onchange="changeWidth();">
+         <p id = "counter"></p>
+      </div>
+      <canvas id="drawing"></canvas>
+   </body>
+</html>
